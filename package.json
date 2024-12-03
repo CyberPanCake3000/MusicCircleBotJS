@@ -1,0 +1,37 @@
+{
+  "name": "music-circle-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot that creates video messages with Spotify track previews",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "@types/sharp": "^0.32.0",
+    "axios": "^1.7.8",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-cache": "^5.1.2",
+    "sharp": "^0.33.5",
+    "spotify-web-api-node": "^5.0.2",
+    "telegraf": "^4.15.3"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/node": "^20.10.4",
+    "@types/spotify-web-api-node": "^5.0.11",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
